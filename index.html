@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>タイピングゲーム</title>
+  <script type="text/javascript" src="modules/lodash.full.min.js"></script>
+  <script type="text/javascript" src="modules/test-boilerplate.js"></script>
+  <script type="text/javascript" src="proverb.js"></script>
+  <script type="text/javascript" src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="screen">
+    <header>
+      <h1>　ことわざタイピング　</h1>
+    </header>
+    <div id="content">
+      <ul>
+        <li>★ 出てくることわざをローマ字で入力してください。</li>
+        <li>★ 全部で20問、制限時間は40秒です。</li>
+        <li>★ <strong>Enterキー</strong>を押すと始まります。</li>
+      </ul>
+    </div>
+
+  <div id="game">
+    <div id="timer">40</div>
+    <p id="roman"></p>
+    <p id="saying">ことわざ</p>
+    <div id="imi">
+      <p id="p">＜意味＞</p>
+      <p id="meaning"></p>
+    </div>
+  </div>
+
+    <!-- <button id="button" onclick="start()">スタート</button> -->
+  </div>
+
+
+
+</body>
+
+</html>
