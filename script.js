@@ -62,7 +62,7 @@
     roman.textContent = '_'.repeat(loc) + word.substring(loc);
     //インデックスの位置まで_にしてインデックスの位置からまた表示させる
 
-    if(loc === word.length && time !== 0){
+    if((loc === word.length && time !== 0) || count === 20){
         setWord(0);
     } else if(time === 0){
       if(count >= 0 && count < 5){
