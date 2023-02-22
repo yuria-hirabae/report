@@ -8,7 +8,7 @@ body{
 }
 
 h1{
-  margin: 20px auto;
+  margin: 20px auto 0;
   padding-top: 2px;
   width: fit-content;
   background-color: rgb(244, 229, 209);
@@ -26,18 +26,20 @@ div#screen{
 
 div#content{
   margin: 0;
-  padding: 0;
-}
-
-
-li{
-  list-style: none;
-  font-size: 20px;
+  padding: 3px 0 0;
+  line-height: 8px;
+  font-size: 22px;
   font-weight: bold;
 }
 
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
 div#game{
-  margin: 20px auto;
+  margin: 30px auto;
   width: 90%;
   height: 65%;
   background-color: rgb(244, 229, 209);
