@@ -4,7 +4,7 @@
   let math = 0; //random
   let mathOk = 0;
   let count = 0; //正解単語数
-  let loc = 0; //ローマ字のindex
+  let index = 0; //ローマ字のindex
   let time = 40; //制限時間
   let random = []; //数字を入れる配列
   let a = 0; //キーが押された回数
@@ -40,7 +40,7 @@
     meaning.textContent = proverb[mathOk]["meaning"];
     roman.textContent = proverb[mathOk]["roman"];
     word = proverb[mathOk]["roman"];
-    loc = num;
+    index = num;
   }
   
 //keyと文字列が一致してるかで判断し0秒になったらkeyを無効にする
@@ -54,15 +54,15 @@
       e.preventDefault();
     }
 
-    if(a >= 2 && e.key !== word[loc]){
+    if(a >= 2 && e.key !== word[index]){
       return;
     }
-      loc++;
+      index++;
     
-    roman.textContent = '_'.repeat(loc) + word.substring(loc);
+    roman.textContent = '_'.repeat(index) + word.substring(index);
     //インデックスの位置まで_にしてインデックスの位置からまた表示させる
 
-    if((loc === word.length && time !== 0) || count === 20){
+    if((index === word.length && time !== 0) || count === 20){
         setWord(0);
     } else if(time === 0){
       if(count >= 0 && count < 5){
