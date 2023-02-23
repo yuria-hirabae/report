@@ -57,7 +57,7 @@
     } else if (time === 0) {
       e.preventDefault();
     };
-    
+
     if (a === 1 && e.key !== word[index]) {
       return;
     }
@@ -70,19 +70,19 @@
       setWord();
     } else if (time === 0) {
       if (count >= 0 && count < 5) {
-        window.alert("Finished!!\nあなたが打てたことわざは20問中、" + count + "問です。\nまだまだ～！もう1回やってみよう！")
+        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です。\nまだまだ～！もう1回やってみよう！")
         return;
       } else if (count >= 5 && count < 10) {
-        window.alert("Finished!!\nあなたが打てたことわざは20問中、" + count + "問です！\n素晴らしい！さすがですね！ナイスです!!!")
+        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です！\n素晴らしい！さすがですね！ナイスです!!!")
         return;
       } else if (count >= 10 && count <= 15) {
-        window.alert("Finished!!\nあなたが打てたことわざは20問中、" + count + "問です！\n素晴らしい！この調子で全問クリアしちゃいましょう！")
+        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です！\n素晴らしい！この調子で20個クリアしちゃいましょう！")
         return;
       } else if (count >= 16 && count < 20) {
-        window.alert("Finished!!\nあなたが打てたことわざは20問中、" + count + "問です！\n控えめに言って天才！！")
+        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です！\n控えめに言って天才！！")
         return;
       } else if (count === 20) {
-        window.alert("Finished!!\nあなたが打てたことわざは20問中、" + count + "問です！\nit's God's Hand!!あなたを超えられる人はいないです…")
+        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です！\nit's God's Hand!!あなたを超えられる人はいないです…")
         return;
       }
     }
