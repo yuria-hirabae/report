@@ -83,6 +83,10 @@ div#timer{
   padding: 0;
 }
 
+footer{
+  text-align: center;
+  font-size: 10px;
+}
 
 /* #button{
   width: 100px;
