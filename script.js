@@ -3,7 +3,7 @@
   let word; //ローマ字
   let math = 0; //random
   let mathOk = 0; //かぶりのない数字
-  let count = 0; //正解単語数
+  let count = -1; //正解単語数
   let index = 0; //ローマ字のindex
   let time = 40; //制限時間
   let random = []; //数字を入れる配列
