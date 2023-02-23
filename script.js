@@ -45,6 +45,16 @@
     index = 0;
   }
 
+  //window.alertで結果を表示、OK押したらリロードする関数
+  const evaluation = ["まだまだ～！もう1回やってみよう！", "素晴らしい！さすがですね！ナイスです!!!", "素晴らしい！この調子で20個クリアしちゃいましょう！", "控えめに言って天才！！", "it's God's Hand!!あなたを超えられる人はいないです…"]; 
+
+  function result (index) {
+    if (!alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です。\n" + evaluation[index])){
+      document.location.reload()
+    };
+    
+  }
+
   //keyと文字列が一致してるかで判断し0秒になったらkeyを無効にする
 
   window.addEventListener("keypress", e => {
@@ -70,19 +80,19 @@
       setWord();
     } else if (time === 0) {
       if (count >= 0 && count < 5) {
-        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です。\nまだまだ～！もう1回やってみよう！")
+        result(0);
         return;
       } else if (count >= 5 && count < 10) {
-        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です！\n素晴らしい！さすがですね！ナイスです!!!")
+        result(1);
         return;
       } else if (count >= 10 && count <= 15) {
-        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です！\n素晴らしい！この調子で20個クリアしちゃいましょう！")
+        result(2);
         return;
       } else if (count >= 16 && count < 20) {
-        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です！\n控えめに言って天才！！")
+        result(3);
         return;
       } else if (count === 20) {
-        window.alert("Finished!!\nあなたが打てたことわざは20個中、" + count + "個です！\nit's God's Hand!!あなたを超えられる人はいないです…")
+        result(4);
         return;
       }
     }
